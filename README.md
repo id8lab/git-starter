@@ -23,4 +23,10 @@ Following is the [github cheatsheet](https://services.github.com/on-demand/downl
 
 ## Let us do some git commands
 
+create a new branch and enter this branch to start working:
+
+``` bash
+ $ git checkout -b gitbranch
+```
+
 
