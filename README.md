@@ -29,6 +29,53 @@ create a new branch and enter this branch to start working:
  $ git checkout -b gitbranch
 ```
 
+So the above command create your new working branch.
+you can work on your code in this branch for the chosen feature.
+When you have completed the code, you have to check it into git.
+
+first do local commits:
+
+```bash
+$ git add .
+$ git commit -m "commit description"
+```
+
+Then you can check status:
+
+```bash
+$ git staus
+
+On branch gitcommands
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+the above outpus is before git commit.
+
+To merge your changes with master branch, you must checkout the master
+
+```bash
+$ git checkout master
+```
+
+now you have to merge your code:
+
+```bash 
+$ git merge gitbranch master
+```
+
+gitbranch was your branch. Now they are merged to master and you have to run local test to verify that all is working.
+
+```bash
+$ git push
+```
+
+will push your code to the github master branch.
 
 you can view the git tree
 ```bash
