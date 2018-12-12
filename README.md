@@ -30,3 +30,16 @@ create a new branch and enter this branch to start working:
 ```
 
 
+you can view the git tree
+```bash
+$ git tree
+*   eabba75 (HEAD -> master, origin/master, origin/HEAD) Merge branch 'newbranch1'
+|\
+| * 770dbab (newbranch1) added a title
+* | 8b31b78 (newbranch2) added new branch 2 file
+|/
+* 01c2317 added new branch1 file
+* 4099fde (gitbranch) added brach info
+* 4240806 first commit to master
+* 8cc3ed8 Initial commit
+```
